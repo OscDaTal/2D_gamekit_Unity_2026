@@ -20561,10 +20561,10 @@ MonoBehaviour:
       Data4: -904574314
     Path: snapshot:/Landing_snapshot
   Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 5
+  EventPlayTrigger: 5
+  EventStopTrigger: 6
   AllowFadeout: 1
-  TriggerOnce: 0
+  TriggerOnce: 1
   Preload: 0
   NonRigidbodyVelocity: 0
   Params: []
@@ -20580,8 +20580,8 @@ Transform:
   m_GameObject: {fileID: 977858405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.62, y: -0.81, z: -13.393232}
-  m_LocalScale: {x: 12.37391, y: 12.03007, z: 1.5303}
+  m_LocalPosition: {x: 1.6, y: 3.56, z: -13.393232}
+  m_LocalScale: {x: 17.95353, y: 7.7607846, z: 2.1955307}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -240,7 +240,7 @@ MonoBehaviour:
       Data2: 1143445184
       Data3: 823688075
       Data4: 1282456131
-    Path: event:/aaaaa
+    Path: event:/Wind
   Event: 
   EventPlayTrigger: 0
   EventStopTrigger: 0
@@ -398,11 +398,18 @@ MonoBehaviour:
     Path: 
   playerAttackMelee:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 370298455
+      Data2: 1226554742
+      Data3: 1709882246
+      Data4: -664936882
+    Path: event:/SFX/Character/Attack/Melee
+  playerAttackRanged:
+    Guid:
+      Data1: 546061387
+      Data2: 1322754664
+      Data3: 1015965112
+      Data4: 356344551
+    Path: event:/SFX/Character/Shoot
   playerHurt:
     Guid:
       Data1: 0
@@ -489,11 +496,11 @@ MonoBehaviour:
     Path: 
   enemyRanged:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 546061387
+      Data2: 1322754664
+      Data3: 1015965112
+      Data4: 356344551
+    Path: event:/SFX/Character/Shoot
   enemyMelee:
     Guid:
       Data1: 0
