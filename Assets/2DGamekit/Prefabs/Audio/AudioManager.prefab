@@ -377,11 +377,11 @@ MonoBehaviour:
     ambiance: {fileID: 5871577781228777767}
   playerFootsteps:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -499236854
+      Data2: 1073824702
+      Data3: -1432888386
+      Data4: 798631395
+    Path: event:/SFX/Character/Movement/Run
   playerJump:
     Guid:
       Data1: 0
@@ -447,11 +447,11 @@ MonoBehaviour:
     Path: 
   pickupKey:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 872654031
+      Data2: 1294914946
+      Data3: -1335289685
+      Data4: -1417289720
+    Path: event:/SFX/Objects/KeyPickup
   pressurePad:
     Guid:
       Data1: 0
