@@ -384,18 +384,18 @@ MonoBehaviour:
     Path: event:/SFX/Character/Movement/Run
   playerJump:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1644889951
+      Data2: 1338239923
+      Data3: -950243160
+      Data4: 731740579
+    Path: event:/SFX/Character/Movement/Jump
   playerLand:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 500068851
+      Data2: 1105349452
+      Data3: 68233355
+      Data4: -819283099
+    Path: event:/SFX/Character/Movement/Landing
   playerAttackMelee:
     Guid:
       Data1: 370298455
@@ -412,39 +412,39 @@ MonoBehaviour:
     Path: event:/SFX/Character/Shoot
   playerHurt:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1515960804
+      Data2: 1257824103
+      Data3: -233310066
+      Data4: 166974929
+    Path: event:/SFX/Character/Damage
   wallDestroy:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -833473832
+      Data2: 1232460712
+      Data3: -2123346040
+      Data4: 1571218090
+    Path: event:/SFX/Objects/Rock_wall_break
   pickupHealth:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1488662549
+      Data2: 1200717238
+      Data3: -86642241
+      Data4: 704095385
+    Path: event:/SFX/Objects/Health_pickup
   doorSwitch:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1348380110
+      Data2: 1123772670
+      Data3: -145160541
+      Data4: -2084411960
+    Path: event:/SFX/Objects/KeySwitch
   doorOpen:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1560330275
+      Data2: 1206047908
+      Data3: 616576665
+      Data4: -36027231
+    Path: event:/SFX/Objects/Door_open
   pickupKey:
     Guid:
       Data1: 872654031
@@ -454,25 +454,25 @@ MonoBehaviour:
     Path: event:/SFX/Objects/KeyPickup
   pressurePad:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 288751564
+      Data2: 1074370991
+      Data3: -1114276429
+      Data4: 868771545
+    Path: event:/SFX/Objects/Pressure_Pad
   acidSplash:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 556975726
+      Data2: 1236851764
+      Data3: -1212011871
+      Data4: -2061073024
+    Path: event:/SFX/Objects/Acid_splash
   boxPush:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 288275533
+      Data2: 1154451134
+      Data3: -299466326
+      Data4: 138524664
+    Path: event:/SFX/Objects/Box_push
   menuClick:
     Guid:
       Data1: 0
@@ -503,18 +503,18 @@ MonoBehaviour:
     Path: event:/SFX/Character/Shoot
   enemyMelee:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -668452543
+      Data2: 1271333166
+      Data3: 537522598
+      Data4: 1384019086
+    Path: event:/SFX/Enemy/Chomper/Attack
   enemyDeath:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 296929541
+      Data2: 1285361933
+      Data3: -1043097711
+      Data4: 1053492760
+    Path: event:/SFX/Enemy/Death
   stingerGameOver:
     Guid:
       Data1: 715162006

@@ -9,7 +9,7 @@ using FMOD.Studio;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
-    
+
     public float combatTimerLength = 0f;
 
     [System.Serializable]
@@ -34,7 +34,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private EventReference playerAttackMelee;
     [SerializeField] private EventReference playerAttackRanged;
 
-    
+
     [SerializeField] private EventReference playerHurt;
     EventInstance playerFootstepInstance;
     EventInstance playerLandInstance;
@@ -53,7 +53,7 @@ public class AudioManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private EventReference menuClick;
     [SerializeField] private EventReference menuStartGame;
-    
+
     [Header("Enemies")]
     [SerializeField] private EventReference enemyFootstep;
     [SerializeField] private EventReference enemyRanged;
@@ -65,7 +65,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private EventReference stingerGameOver;
     [SerializeField] private EventReference stingerKeyPickup;
     [SerializeField] private EventReference stingerWeaponPickup;
-        
+
     [HideInInspector]
     public bool combatState;
     private bool timerRunning;
@@ -91,7 +91,7 @@ public class AudioManager : MonoBehaviour
         }
         DontDestroyOnLoad(this);
     }
-    
+
     public void Health(int currentHealth)
     {
         eventEmitters.music02.SetParameter("Health", currentHealth);
@@ -101,15 +101,15 @@ public class AudioManager : MonoBehaviour
     private void Update()
     {
         comboTimer -= Time.deltaTime;
-        
+
         if (comboTimer <= 0)
         {
             killedEnemies = 0;
             RuntimeManager.StudioSystem.setParameterByName(killedEnemiesParam, killedEnemies);
         }
 
-        Debug.Log(aggroEnemyCount);
-        
+        //Debug.Log(aggroEnemyCount);
+
         //RuntimeManager.StudioSystem.setParameterByName(aggroEnemyParamName, aggroEnemyCount);
     }
 
@@ -136,7 +136,7 @@ public class AudioManager : MonoBehaviour
             */
         if (eventEmitters.music02.EventInstance.isValid())
             eventEmitters.music02.SetParameter("Combat", 1f);
-        
+
         Debug.Log("Timer on");
         timerRunning = true;
         float timer = combatTimerLength;
@@ -203,16 +203,16 @@ public class AudioManager : MonoBehaviour
         switch(surface)
         {
             case "Grass":
-                playerFootstepInstance.setParameterByName("Surface", 0f);
+                playerLandInstance.setParameterByName("Surface", 0f);
                 break;
             case "Rock":
-                playerFootstepInstance.setParameterByName("Surface", 1f);
+                playerLandInstance.setParameterByName("Surface", 1f);
                 break;
             case "Metal":
-                playerFootstepInstance.setParameterByName("Surface", 2f);
+                playerLandInstance.setParameterByName("Surface", 2f);
                 break;
             default:
-                playerFootstepInstance.setParameterByName("Surface", 0f);
+                playerLandInstance.setParameterByName("Surface", 0f);
                 break;
         }
         playerLandInstance.start();
@@ -228,7 +228,7 @@ public class AudioManager : MonoBehaviour
         }
         RuntimeManager.PlayOneShot(playerAttackMelee, transform.position);
     }
-    
+
     public void PlayRanged()
     {
         if (playerAttackRanged.IsNull)
@@ -239,7 +239,7 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(playerAttackRanged, transform.position);
     }
 
-	
+
 
     public void PlayHurt()
     {
@@ -330,7 +330,7 @@ public class AudioManager : MonoBehaviour
     {
         RuntimeManager.PlayOneShot(stingerWeaponPickup);
     }
-    
+
     public void PlayGameOver()
     {
         if (stingerGameOver.IsNull)
@@ -448,18 +448,18 @@ public class AudioManager : MonoBehaviour
         {
             eventEmitters.musicPause.Play();
         }
-        
+
         if (eventEmitters.snapShotPause.EventReference.IsNull)
         {
             Debug.LogWarning("Fmod event not found: eventEmitters.musicPause");
             return;
         }
-        
+
         if (!eventEmitters.snapShotPause.IsActive)
         {
             eventEmitters.snapShotPause.Play();
         }
-        
+
     }
 
     public void StopMusicPause()
@@ -474,13 +474,13 @@ public class AudioManager : MonoBehaviour
         {
             eventEmitters.musicPause.Stop();
         }
-        
+
         if (eventEmitters.snapShotPause.EventReference.IsNull)
         {
             Debug.LogWarning("Fmod event not found: eventEmitters.musicPause");
             return;
         }
-        
+
         if (eventEmitters.snapShotPause.IsActive)
         {
             eventEmitters.snapShotPause.Stop();
@@ -504,7 +504,7 @@ public class AudioManager : MonoBehaviour
             savedParameterValues.Add(savedParam);
             return savedParam.Item3;
         }
-        
+
         for (int i = 0; i < savedParameterValues.Count; i++)
         {
             if (savedParameterValues[i].Item1 == emitter && savedParameterValues[i].Item2 == parameter)

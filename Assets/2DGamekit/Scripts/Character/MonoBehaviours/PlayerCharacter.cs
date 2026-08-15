@@ -191,9 +191,9 @@ namespace Gamekit2D
                     PlayerInput.Instance.Pause.GainControl();
                     m_InPause = true;
                     Time.timeScale = 0;
-                    
+
                     AudioManager.Instance.PlayMusicPause();
-                    
+
                     UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("UIMenus", UnityEngine.SceneManagement.LoadSceneMode.Additive);
                 }
                 else
@@ -204,7 +204,7 @@ namespace Gamekit2D
         }
 
         void FixedUpdate()
-        { 
+        {
             m_CharacterController2D.Move(m_MoveVector * Time.deltaTime);
             m_Animator.SetFloat(m_HashHorizontalSpeedPara, m_MoveVector.x);
             m_Animator.SetFloat(m_HashVerticalSpeedPara, m_MoveVector.y);
@@ -214,7 +214,7 @@ namespace Gamekit2D
 
         public void Unpause()
         {
-            //if the timescale is already > 0, we 
+            //if the timescale is already > 0, we
             if (Time.timeScale > 0)
                 return;
 
@@ -449,12 +449,12 @@ namespace Gamekit2D
                     //only play the landing sound if falling "fast" enough (avoid small bump playing the landing sound)
                     hit2D = Physics2D.Raycast(transform.position + new Vector3(0,0.5f,0), Vector2.down, 1f);
                     Debug.DrawRay(transform.position + new Vector3(0,0.5f,0), Vector2.down*1, Color.blue, 1f);
-                    
+
                     if (hit2D.collider != null)
                     {
                         //Call the land function and use the collider tag for surface comparison
-                        audioManager.PlayLand(hit2D.collider.tag);
                         Debug.Log("Surface is " + hit2D.collider.tag);
+                        audioManager.PlayLand(hit2D.collider.tag);
                     }
                 }
             }
@@ -594,7 +594,7 @@ namespace Gamekit2D
         {
             int colliderCount = 0;
             int fallthroughColliderCount = 0;
-        
+
             for (int i = 0; i < m_CharacterController2D.GroundColliders.Length; i++)
             {
                 Collider2D col = m_CharacterController2D.GroundColliders[i];
@@ -798,7 +798,7 @@ namespace Gamekit2D
             {
                 return;
             }
-            
+
             var footstepPosition = transform.position;
             footstepPosition.z -= 1;
             VFXController.Instance.Trigger("DustPuff", footstepPosition, 0, false, null, m_CurrentSurface);
