@@ -496,11 +496,11 @@ MonoBehaviour:
     Path: 
   enemyRanged:
     Guid:
-      Data1: 546061387
-      Data2: 1322754664
-      Data3: 1015965112
-      Data4: 356344551
-    Path: event:/SFX/Character/Shoot
+      Data1: 1031018985
+      Data2: 1086961187
+      Data3: 1356310436
+      Data4: 384263755
+    Path: event:/SFX/Enemy/Spit
   enemyMelee:
     Guid:
       Data1: -668452543
