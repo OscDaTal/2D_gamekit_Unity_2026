@@ -475,11 +475,11 @@ MonoBehaviour:
     Path: event:/SFX/Objects/Box_push
   menuClick:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1139644374
+      Data2: 1114160907
+      Data3: 1833124031
+      Data4: 1685061652
+    Path: event:/SFX/UI/Select
   menuStartGame:
     Guid:
       Data1: 0

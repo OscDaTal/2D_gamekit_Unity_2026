@@ -111,7 +111,7 @@ public class AudioBossManager : MonoBehaviour
                 break;
         }
     }
-    
+
     public void BossSteamStage(GameObject boss, int steamStage)
     {
         switch (steamStage)
@@ -144,7 +144,7 @@ public class AudioBossManager : MonoBehaviour
                 break;
         }
     }
-    
+
     public void BossDie(GameObject boss)
     {
         if (bossDie.IsNull)
